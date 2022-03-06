@@ -5,7 +5,7 @@ Step 2: SUBTRACT(R1,R2,R1)
 Step 3: ADD(R4,M1,R4)
 //add 1 to R4 on each subtraction and write it to R4 again
 Step 4: >=(R1,R2,R3)
-//If R1 is greater than or equal to R2 write 1 to R4 otherwise write 0
+//If R1 is greater than or equal to R2 write 1 to R3 otherwise write 0
 Step 5: IfJump(R3,2)
 //If R3 is 1 return to step 2 otherwise continue from step 6
 Step 6: Write(R1,R2)
