@@ -1,14 +1,16 @@
-Hi I am Kardelen
-We are starting project 1
-inş we are starting
-
-
-Step 1: Input Register1
-Step 2: Input Register2
-Step 3:   If Register1's first digit > Register2
-Step 4:   Register1 / Register2
-Step 5:      Print(Q)
-Step 6:   Else 
-            Register
-      
-  
+Step 1: Input R1,R2,R3,R4,M1
+//R1 = Dividend, R2 = Divisor, R3 = Output, R4 = 0, M1 = 1
+Step 2: SUBTRACT(R1,R2,R1) 
+//Subtract R2 from R1 and write it back to R1
+Step 3: ADD(R4,M1,R4)
+//add 1 to R4 on each subtraction and write it to R4 again
+Step 4: >=(R1,R2,R3)
+//If R1 is greater than or equal to R2 write 1 to R4 otherwise write 0
+Step 5: IfJump(R3,2)
+//If R3 is 1 return to step 2 otherwise continue from step 6
+Step 6: Write(R1,R2)
+//save remainder to R2
+Step 7: Write(R4,R1)
+//save quotient to R1
+Step 8: PRINT(R1)  //Quotient
+Step 9: PRINT(R2)  //Remainder
